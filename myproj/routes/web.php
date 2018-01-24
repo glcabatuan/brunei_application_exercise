@@ -19,6 +19,14 @@ Route::get('/error', function () {
     echo "Error";
 });
 
+Route::get('/answers', function () {
+   return view('child');
+});
+
+Route::get('/samp', function () {
+   echo 'alright';
+});
+
 /*Problems Solutions */
 /*Problem#1*/
 Route::get('/Prob1/{num}','ComputationController@Prob1')->middleware('single.int');
