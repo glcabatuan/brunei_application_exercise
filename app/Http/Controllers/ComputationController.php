@@ -40,33 +40,16 @@ class ComputationController extends Controller
 		echo $ans;
 	}
 	
-	public function Prob3(Request $request){
-		$chars=str_split($request->word);
-		$counts=array();
+	public function Prob3(Request $request){	
 		
-
-		for($index=0;$index<count($chars);$index++){
-			$stop=false;
-			$count=0;
-			for($comp=$index+1;$comp<count($chars);$comp++){
-				
-				$count+=($chars[$index]==$chars[$comp]?1:0);			
-			
-			}
-			$counts[$index]=($chars[$index]."-".$count);
-			echo $counts[$index].'<br/>';			
-		}
-		$char='';
-		
-		for($index=0;$index<count($chars);$index++){
-			$pairs=explode('-',$counts[$index]);
-			if($pairs[1]==0){
-				$char=$pairs[0];
-				break;
-			}
-		}
-		
-		echo $char;   
+		$chars=str_split($request->word);		
+		$duplicates = array_unique( array_diff_assoc( $chars, array_unique( $chars ) ));
+		$uniques = array_diff($chars,$duplicates);		
+		$uniques =array_values($uniques);
+		if(isset($uniques[0]))
+			echo $uniques[0];
+		else
+			echo "All have duplicates"; 
 	}
 	
 	
