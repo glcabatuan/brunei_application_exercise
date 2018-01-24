@@ -14,9 +14,12 @@
 				  $('.code').hide();
 				 
 				  $( ".toggle" ).click(function() {
+					   
 					  $(this).siblings(".code" ).toggle( "slow", function() {
 						
 					  });
+					  
+					
 				  });
 				
 				
@@ -81,9 +84,9 @@
 				<div class="problems">
 				   <div class="question"> @yield('ques1')</div>
 				   <div class="io"> @yield('io1')</div>
-				   <div class="control"> @yield('ctrl1')</div>
+				   <div class="control" name="a"> @yield('ctrl1')</div>
 				   <div class="output"> @yield('out1')</div>
-				   <a href="#" class="toggle">View Code Here</a>
+				   <a href="#!" class="toggle" >View Code Here</a>
 				   <div class="code"> @yield('code1')</div>
 				</div>
 			</li>
@@ -91,9 +94,9 @@
 				<div class="problems">
 				   <div class="question"> @yield('ques2')</div>
 				   <div class="io"> @yield('io2')</div>
-				   <div class="control"> @yield('ctrl2')</div>
+				   <div class="control" name="b"> @yield('ctrl2')</div>
 				   <div class="output"> @yield('out2')</div>
-				   <a href="#" class="toggle">View Code Here</a>
+				   <a href="#!" class="toggle" >View Code Here</a>
 				   <div class="code"> @yield('code2')</div>
 				</div>
 			</li>
@@ -102,9 +105,9 @@
 				<div class="problems">
 				   <div class="question"> @yield('ques3')</div>
 				   <div class="io"> @yield('io3')</div>
-				   <div class="control"> @yield('ctrl3')</div>
+				   <div class="control" name="c"> @yield('ctrl3')</div>
 				   <div class="output"> @yield('out3')</div>
-				   <a href="#" class="toggle">View Code Here</a>
+				   <a href="#!" class="toggle">View Code Here</a>
 				   <div class="code"> @yield('code3')</div>
 				</div>
 			</li>
@@ -115,7 +118,7 @@
 				   <div class="io"> @yield('io4')</div>
 				   <div class="control"> @yield('ctrl4')</div>
 				   <div class="output"> @yield('out4')</div>
-				   <a href="#" class="toggle">View Code Here</a>
+				   <a href="#!" class="toggle">View Code Here</a>
 				   <div class="code"> @yield('code4')</div>
 				</div>
 			</li>
@@ -126,7 +129,7 @@
 				   <div class="io"> @yield('io5')</div>
 				   <div class="control"> @yield('ctrl5')</div>
 				   <div class="output"> @yield('out5')</div>
-				   <a href="#" class="toggle">View Code Here</a>
+				   <a href="#!" class="toggle">View Code Here</a>
 				   <div class="code"> @yield('code5')</div>
 				</div>
 			</li>
