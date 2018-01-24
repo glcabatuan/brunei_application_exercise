@@ -15,14 +15,17 @@ class CheckSingleInt
      */
     public function handle($request, Closure $next)
     { 
-		$int=$request->num;	
-		$passed=false;
-		if($int>0)
-			$passed=true;
-		if(!$passed)
-			return redirect('error');
+		$int=intval($request->num);	 // get number from request		
 		
-		return $next($request);
+		/* 
+		proceed to request processing if it is a positive integer. 
+		If not, return error message
+		*/
+		if($int>0)
+			return $next($request);
+		if(!$passed)
+			return redirect('error');		
+		
 		
     }
 }

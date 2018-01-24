@@ -23,6 +23,11 @@
 @endsection
 @section('out1')
     <p id='out1'> answer </p>
+	
+@endsection
+
+@section('code1')
+    <p class='code' id='code1'> <script src="https://gist.github.com/glcabatuan/6536e8a0d2f85f4d9d47e1f6f93b95e8.js"></script> </p>
 @endsection
 		   
 
@@ -41,6 +46,9 @@
 @section('out2')
     <p id='out2'> answer </p>
 @endsection
+@section('code2')
+    <p  class='code' id='code2'><script src="https://gist.github.com/glcabatuan/30872f8976791c83d93c868bb243b360.js"></script> </p>
+@endsection
 
 
 @section('ques3')
@@ -57,6 +65,9 @@
 @endsection
 @section('out3')
     <p id='out3'> answer </p>
+@endsection
+@section('code3')
+    <p class='code'  id='code3'><script src="https://gist.github.com/glcabatuan/6d8e215c2e7ad359e3bded90d282832d.js"></script></p>
 @endsection
 
 
@@ -86,6 +97,9 @@
 @section('out4')
     <p id='out4'> answer </p>
 @endsection
+@section('code4')
+    <p class='code'  id='code4'><script src="https://gist.github.com/glcabatuan/47a424bf4c5d397664469ce487f070a5.js"></script></p>
+@endsection
 
 
 
@@ -97,6 +111,9 @@
 @endsection
 @section('out5')
     <p id='out5'> answer </p>
+@endsection
+@section('code5')
+    <p  class='code' id='code5'><script src="https://gist.github.com/glcabatuan/49329d9cda1320644e7ce52a9dca1cbc.js"></script></p>
 @endsection
 
 
